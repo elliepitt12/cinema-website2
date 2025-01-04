@@ -1,0 +1,387 @@
+/*Index page */
+ header {
+     background-color: #000000;
+     color: #ffcc00;
+     padding: 10px;
+     font-family: Bree Serif;
+     font-size: 70px;
+}
+ header img {
+     height: auto;
+     width: 8%;
+}
+ body {
+     font-family:Bree Serif;
+     background-color:#000000;
+     color:white;
+}
+ .Banner img {
+     width: 100%;
+     opacity:0.5;
+     transition: 1s ease;
+}
+ .Banner img:hover {
+     opacity:1.5;
+     transition: 1s ease;
+}
+ h1 {
+     font-family: Bree Serif-opacity 50%;
+     color: red;
+     font-size: 100px;
+     -webkit-text-stroke: 3px red;
+     text-align: center;
+}
+ nav.nav1 {
+     background-color: #FCB00F;
+     font-family: 'Black Han Sans', sans-serif;
+     font-weight: bold;
+     font-size:50px;
+     text-align: center;
+     padding-left:10%;
+     padding-right:1%;
+     text-shadow: 1px 1px 3px Black;
+     word-spacing: 200%;
+}
+ nav.nav1 ul {
+     list-style: none;
+     width: 100%;
+     padding:1%;
+     margin:0;
+}
+ nav.nav1 li {
+     display:inline;
+}
+ nav.nav1 a {
+     color:black;
+     text-decoration:none;
+     text-align: center;
+     padding: 1%;
+}
+ nav.nav1 li:last-of-type {
+     border-right: 0px;
+}
+ nav.nav1 a:hover {
+     color: #404040;
+}
+ input#menu, label {
+     display: none;
+}
+ .word-colour {
+     color: black;
+}
+ .word-colour:hover {
+     color: #404040;
+}
+ .highlight-word-colour {
+     color: red;
+}
+ .highlight-word-colour:hover {
+     color: #404040;
+}
+ h2 {
+     font-family:Black Han Sans;
+     font-size: 50px;
+     color:black;
+}
+
+ .movies img {
+     width: 24.5%;
+     height: 600px;
+     background-color: black;
+     -webkit-filter: brightness(50%);
+     -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+     -o-transition: all 1s ease;
+     -ms-transition: all 1s ease;
+     transition: all 1s ease;
+}
+ .movies img:hover {
+     -webkit-filter: brightness(110%);
+}
+ footer {
+     font-family: serif;
+     background-color: #FCB00F;
+     color: black;
+     padding: 10px;
+     text-align: center;
+     clear: both;
+}
+ .Copyright {
+     background-color: #FCB00F;
+}
+ .Copyright2 {
+     padding-bottom: 10px;
+}
+ .Social {
+     background-color: #FCB00F;
+     padding-left: 80%;
+     padding-top: 1%;
+     vertical-align: bottom;
+}
+ a:link {
+     color: #FCB00F;
+     background-color: transparent;
+     text-decoration: none;
+}
+ a:visited {
+     color: #FCB00F;
+     background-color: transparent;
+     text-decoration: none;
+}
+ a:hover {
+     color: #FCB00F;
+     background-color: transparent;
+     text-decoration: underline;
+}
+ a:active {
+     color: #FCB00F;
+     background-color: transparent;
+     text-decoration: underline;
+}
+/*Homepage Ended */
+/* Media Query Overide Mobile */
+/*Mobile Homepage */
+ @media only screen and (max-width:599px) {
+     header {
+         background-color: black;
+    }
+     header img {
+         max-width: 100%;
+         max-height: 100%;
+    }
+     nav.nav1 li {
+         width:100%;
+         display:block;
+         text-align:left;
+         min-height:44px;
+         font-size: 80%;
+    }
+     aside {
+         width: 100%;
+    }
+     article {
+         width: 100%;
+    }
+     .collapsible-menu {
+         background-color: black;
+         padding: 0px 20px;
+    }
+     .collapsible-menu label {
+         font-size: 100%;
+         color:black;
+         display: block;
+         cursor: pointer;
+         background: url(../graphics/hamburger.jpg) no-repeat left center;
+         padding: 10px 0 10px 50px;
+    }
+     input:checked +label {
+         background-image: url(../graphics/hamburger.jpg);
+    }
+     nav.nav1 {
+         max-height: 0;
+         overflow: hidden;
+         padding: 0 0 0 50px;
+    }
+    /* Toggle Effect */
+     input:checked ~ label {
+         background-image: url(../graphics/hamburger.jpg);
+    }
+     input:checked ~ nav.nav1 {
+         max-height: 100%;
+    }
+     h1 {
+         font-size: 400%;
+    }
+     .movies img {
+         width: 49.5%;
+         height: 600px;
+    }
+     .Copyright {
+         background-color: #FCB00F;
+    }
+     .Copyright2 {
+         padding-bottom: 10px;
+    }
+     .Social {
+         width: 70%;
+         height: 70%;
+         padding-left: 30%;
+         padding-top: 1%;
+         vertical-align: bottom;
+    }
+}
+/* Mobile Homepage ended */
+/*History Webpage */
+ .image1 video {
+     width: 618px;
+     height: 363px;
+}
+ .image1 {
+     float: left;
+     opacity:0.5;
+     transition: 1s ease;
+}
+ .image1:hover {
+     opacity:1;
+     transition: 1s ease;
+}
+ h3.Title {
+     font-family: Bree Serif, opacity 50%;
+     color: red;
+     font-size: 60px;
+     -webkit-text-stroke: 2px red;
+     text-align: center;
+     float: left;
+     clear: right;
+     padding-left: 10px;
+}
+ .copy1 {
+     float: left;
+     width: 50%;
+     margin: 0px 0px 0px 0px;
+     padding-left: 10px;
+}
+ .para1 {
+     float: left;
+}
+ .Seperate1 {
+     width: 100%;
+}
+/*History Webpage ended */
+/*History Webpage mobile view */
+ @media only screen and (max-width:599px) {
+     .image1 {
+         width: 100%;
+         height: 363px;
+    }
+     .image1 video {
+         width: 100%;
+         height: 363px;
+    }
+     .popular1 img {
+         width: 599px;
+         max-width: 49.5%;
+         height: 600px;
+    }
+}
+/*History Webpage mobile view ENDED */
+/* Popular Webpage */
+ * {
+     margin: 0;
+     padding: 0;
+}
+
+ .container {
+     width: 100%;
+     height: 682px;
+     margin: auto;
+     overflow: hidden;
+}
+ .container .slider {
+     position: relative;
+     width: 500%;
+     margin: 0;
+     left: 0;
+     top: 0;
+     animation: animate 30s infinite ease-in-out;
+}
+ .container .slider img {
+     width: 20%;
+     float: left;
+}
+ @keyframes animate {
+     0%,120%{
+         left: 0
+    }
+     20%{
+         left: 0
+    }
+     40%{
+         left: -100%
+    }
+     60%{
+         left: -200%
+    }
+     80%{
+         left: -300%
+    }
+     100%{
+         left: -400%
+    }
+     120%{
+         left: -600%
+    }
+}
+ .popular1 img {
+     width: 350px;
+     height: 600px;
+     background-color: black;
+}
+/* Popular Webpage ended*/
+/*Popular Mobilepage*/
+ @media only screen and (max-width:599px) {
+     .container .slider img {
+         float: left;
+         padding-top: 10%;
+    }
+}
+/*Popular Mobilepage end*/
+/*Contact Webpage start*/
+ .Contact {
+     background-color: #C90000;
+}
+ .contact-text {
+     font-family: Bree Serif-opacity 50%;
+     color: #FCB00F;
+     font-size: 90px;
+     -webkit-text-stroke: 3px #FCB00F;
+     text-align: center;
+     background-color: #C90000;
+     width: 50%;
+     height: 500px;
+     padding-left: 12%;
+}
+ .contact-body {
+     font-size: 40px;
+     background-color: #C90000;
+     width: 50%;
+     height: 500px;
+     font-family:Bree Serif;
+     color:white;
+     float: left;
+     text-align: center;
+}
+ .contact-form {
+     background-color: #C90000;
+     width: 50%;
+     height: 500px;
+     float: left;
+}
+ form {
+     background-color: #C90000;
+     padding-left: 60%;
+     height: 500px;
+}
+ .form-text {
+     font-size: 30px;
+     background-color: #C90000;
+     font-family:Bree Serif;
+     color:white;
+}
+/*Contact Webpage ended*/
+/*Contact Mobile*/
+ @media only screen and (max-width:599px) {
+     .contact-body {
+         font-size: 30px;
+    }
+}
+/*Contact Mobile end*/
+/*References Webpage Start*/
+ .References {
+     padding: 1%;
+     background-color: red;
+}
+/*References Webpage Ended*/
+/* overrides css for mobile views up to 599px wide */
+/* END OF MOBILE OVERIDE STYLING */
+/* */
